@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/Xiaoguang/Library/Assistant'
+let g:netrw_dirhist_6='/Users/Xiaoguang/Library'
+let g:netrw_dirhist_5='/Users/Xiaoguang'
+let g:netrw_dirhist_4='/Users/Xiaoguang/Desktop'
+let g:netrw_dirhist_3='/Users/Xiaoguang/Study/Gatech/Classes/Spring2021/CS7641/assignments/unsupervised-learning/src'
+let g:netrw_dirhist_2='/Users/Xiaoguang/Study/Gatech/Classes/Spring2021/CS7641/notes'
+let g:netrw_dirhist_1='/Users/Xiaoguang'
