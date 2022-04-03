@@ -7,15 +7,14 @@ require("telescope").setup({
         prompt_prefix = " >",
         color_devicons = true,
 
-        -- file_previewer = require("telescope.previewers").vim_buffer_cat.new,
-        -- grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
-        -- qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
+        file_previewer = require("telescope.previewers").vim_buffer_cat.new,
+        grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
+        qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
 
         mappings = {
             i = {
-                ["<C-r>"] = actions.select_default,
-                ["<C-h>"] = actions.select_horizontal,
-                ["<C-v>"] = actions.select_vertical,
+                ["<C-x>"] = actions.select_default,
+                ["<C-s>"] = actions.select_horizontal,
                 ["<CR>"] = actions.select_horizontal,
             },
              
