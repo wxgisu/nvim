@@ -4,7 +4,7 @@ set expandtab
 set smartindent
 set exrc
 set relativenumber
-set nu 
+set nu
 set nohlsearch
 set hidden
 set nowrap
@@ -21,7 +21,7 @@ call plug#begin('~/.vim/plugged')
 
 if exists('g:vscode')
     " load plugins only for vscode-neovim
-else 
+else
     " load plugins only for native neovim
 
     " Telescope
@@ -40,9 +40,11 @@ else
     Plug 'ryanoasis/vim-devicons'
 
     " IDE
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    " Treesitter is very painful to maintain, closing it for now
+    " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'williamboman/mason.nvim'
+    Plug 'williamboman/mason-lspconfig.nvim'
     Plug 'neovim/nvim-lspconfig'
-    Plug 'williamboman/nvim-lsp-installer'
     Plug 'hrsh7th/cmp-nvim-lsp'
     Plug 'hrsh7th/cmp-buffer'
     Plug 'hrsh7th/cmp-path'
@@ -59,7 +61,7 @@ call plug#end()
 " leader key
 let mapleader = " "
 
-" - configs 
+" - configs
 " source common config files
     runtime! plugin-config/common/*.vim
 if exists('g:vscode')

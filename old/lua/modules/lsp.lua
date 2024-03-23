@@ -10,7 +10,7 @@ lsp_installer.on_server_ready(function(server)
     -- if server.name == "tsserver" then
     --     opts.root_dir = function() ... end
     -- end
-    if server.name == "sumneko_lua" then
+    if server.name == "lua_ls" then
         opts = {
           settings = {
             Lua = {
